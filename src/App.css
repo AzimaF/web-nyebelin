@@ -1,11 +1,10 @@
-/* App.css */
 .page-wrapper {
   min-height: 100vh;
   width: 100vw;
   background-color: var(--primary-blue);
   color: var(--text-white);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -243,11 +242,12 @@
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    padding: 20px;
-  }
   .hero-section {
-    padding: 0 20px 80px;
+    padding: 20px 20px 100px;
+    justify-content: flex-start; /* Start from top on mobile so we can scroll down */
+  }
+  .hero-content {
+    margin-top: 50px;
   }
   .hero-title {
     font-size: 3.5rem;
@@ -259,10 +259,18 @@
     display: inline-block;
     transform: none;
   }
+  .action-wrapper {
+    margin-top: 80px;
+  }
+  .action-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .marquee-container {
     top: 50%;
   }
   .cards-container {
     flex-direction: column;
+    padding-bottom: 50px;
   }
 }
