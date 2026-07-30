@@ -260,14 +260,14 @@
     transform: none;
   }
   .action-wrapper {
-    margin-top: 140px;
+    margin-top: 180px;
   }
   .action-group {
     flex-direction: column;
     align-items: flex-start;
   }
   .marquee-container {
-    top: 68%;
+    top: 60%;
   }
   .cards-container {
     flex-direction: column;
